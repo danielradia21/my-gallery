@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome To The Book Shop</h1>
+    <table class="main">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th class="sort-by" abbr="text" onclick="onSort(this.abbr)">Title</th>
+                <th class="sort-by" abbr="price" onclick="onSort(this.abbr)">Price</th>
+                <th class="sort-by" abbr="rating" onclick="onSort(this.abbr)">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="board">
+        </tbody>
+    </table>
+
+    <div class="btns-active">
+        <button onclick="onAddBookModal()">Add New Book</button>
+        <button onclick="onNextPage()">Next Page ➡</button>
+    </div>
+    <div class="modal">
+        <div>
+            <img class="modal-book-picture" src="">
+        </div>
+        <h5></h5>
+        <hr>
+        <h6></h6>
+        <p></p>
+    </div>
+
+
+    <script src="js/services/book-storage.service.js"></script>
+    <script src="js/services/book.service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>

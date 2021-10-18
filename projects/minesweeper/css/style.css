@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+.title {
+    color: black;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.game-board {
+    font-family: 'MedievalSharp', cursive;
+    width: 400px;
+    height: 400px;
+    border: 2px dashed #c1b092;
+
+    border-collapse: collapse;
+}
+.cell {
+    font-size: 12px;
+    visibility: visible;
+}
+
+.cell:hover {
+    animation: swing 0.4s ease;
+    animation-iteration-count: 1;
+}
+
+.odd {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/1.jpg');
+    background-size: 103%;
+}
+.even {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/2.jpg');
+    background-size: 103%;
+}
+
+.show {
+    transition: ease-in-out 0.2s;
+    background-image: url('../img/3.jpg');
+    background-size: 103%;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.hearts {
+    width: 30%;
+    font-size: 20px;
+}
+.flags {
+    width: 30%;
+    font-size: 20px;
+}
+
+.levels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn {
+    width: 25%;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #d1b06e8a;
+    border: 2px dashed #c1b092;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+
+.my-name {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Great Vibes', cursive;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 23px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    padding: 2px 2%;
+    border: 1px solid #c1b092;
+    border-radius: 15px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.exploed {
+    background: #ba3e3ee3;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+.modal {
+    font-family: 'MedievalSharp', cursive;
+    width: 28%;
+    height: 15%;
+    background-color: #d1b06e8a;
+    display: none;
+    position: absolute;
+    top: 25%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    border: 2px dashed #c1b092;
+    border-radius: 25%;
+    text-shadow: black 5px 5px;
+}
+.modal-btn {
+    border-radius: 20px;
+    width: 50%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-family: monospace;
+}
+.timer {
+    display: block;
+}
+
+@keyframes swing {
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+button {
+    margin-top: 20px;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.cell img {
+    width: 25px;
+    height: auto;
+}
+.floor {
+    background-color: #3db618;
+}
+
+.wall {
+    background-color: #864040;
+    border: 3px solid rgb(204, 204, 204);
+}
+.target {
+    background-color: #be0a0a;
+    border: 2px double #f7c83b;
+    border-radius: 40%;
+}
+.water {
+    background-color: rgb(56, 155, 216);
+    border: 2px dotted white;
+}
+.modal {
+    width: 28%;
+    height: 15%;
+    background-color: #68ccce5c;
+    display: none;
+    position: absolute;
+    top: 25%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    border-radius: 40px;
+    text-shadow: black 5px 5px;
+}
+.modal-btn {
+    border-radius: 20px;
+    width: 50%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-family: monospace;
+}

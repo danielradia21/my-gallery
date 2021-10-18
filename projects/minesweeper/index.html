@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body onload="initGame()">
+    <h1 class="title">The Mine Sweeper</h1>
+    <h2><span class="timer"></span></h2>
+    <div class="main-div">
+        <div class="user-bar"><span class="hearts"></span> <span class="smiley" onclick="resetGame()"></span> <span
+                class="flags"></span></div>
+        <table class="game-board">
+
+        </table>
+        <div class="levels">
+            <button class="btn" onclick="levels(4,2,2,2,'beg')">Beginner</button>
+            <button class="btn" onclick="levels(8,12,12,4,'med')">Medium</button>
+            <button class="btn" onclick="levels(12,30,30,6,'ex')">Expert</button>
+        </div>
+    </div>
+    <div class="modal">
+    </div>
+    <footer>Create & Design By <span class="my-name">Daniel Radia</span></footer>
+
+    <script src="js/sUtils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
